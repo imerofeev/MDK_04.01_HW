@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'),
+        url('../fonts/Inter-Regular.ttf');
+    font-weight: 400;
+}
+
+h1 {
+    margin: 0 0 0 0;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Inter', Courier, monospace;
+    background: #0d1117;
+    user-select: none;
+}
+
+.cont,
+.block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+
+    background: url(../img/3.png) no-repeat;
+    background-size: 100%;
+
+    .block {
+        flex-direction: column;
+
+        h1 {
+            margin: 20px 0 20px 0;
+            color: #ffffff;
+        }
+
+        &:hover {}
+
+        &:active {}
+
+        table {
+            border-collapse: collapse;
+            border: 1px solid rgba(190, 190, 190, 0.5);
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+
+            td,
+            th {
+                width: 200px;
+                height: 100px;
+                border: 1px solid rgba(190, 190, 190, 0.5);
+                padding: 10px 20px;
+                text-align: center;
+                font-size: 18px;
+                color: #ffffff;
+
+                &:first-child {
+                    width: 30px;
+                    text-align: center;
+                }
+            }
+
+            th {
+                background: rgba(190, 190, 190, 0.2);
+                border-bottom: 2px solid rgba(190, 190, 190, 0.5);
+            }
+
+            td {
+                text-align: left;
+            }
+        }
+
+        .gif {
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            height: 200px;
+        }
+    }
+
+    // @media only screen and (min-width: 2500px) {
+    //     width: 100%;
+    //     max-width: 1920px;
+    // }
+}
+
+.element-animation {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.element-animation.element-show {
+    opacity: 1;
+    transition: all 3s;
+    transform: translateY(0%);
+}
+
+@keyframes ani {
+    0% {
+        transform: translateX(-150%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
