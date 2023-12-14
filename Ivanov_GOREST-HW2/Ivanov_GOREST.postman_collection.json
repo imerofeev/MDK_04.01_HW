@@ -1,0 +1,413 @@
+{
+	"info": {
+		"_postman_id": "6577883a-9ebf-40d8-b488-19006cf31888",
+		"name": "Ivanov_GOREST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31536627"
+	},
+	"item": [
+		{
+			"name": "tasks1",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"key": "3e62f101ede1506464e5735255d4c571368f0a3be382b3a7e03ca4ba29912963",
+						"in": "header",
+						"value": ""
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "main",
+						"value": "https://gorest.co.in",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "https://gorest.co.in/public/v2/users/"
+			},
+			"response": []
+		},
+		{
+			"name": "task2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://gorest.co.in/public/v2/users/5803665"
+			},
+			"response": []
+		},
+		{
+			"name": "task3",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Autorization",
+						"value": "3e62f101ede1506464e5735255d4c571368f0a3be382b3a7e03ca4ba29912963",
+						"type": "text"
+					}
+				],
+				"url": "https://gorest.co.in/public/v2/users/"
+			},
+			"response": []
+		},
+		{
+			"name": "task4",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"key": "3e62f101ede1506464e5735255d4c571368f0a3be382b3a7e03ca4ba29912963",
+						"in": "header",
+						"value": ""
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 3e62f101ede1506464e5735255d4c571368f0a3be382b3a7e03ca4ba29912963"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ivanov Kirll\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"Ivanov_Kirill@schiller.test\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users?access-token=3e62f101ede1506464e5735255d4c571368f0a3be382b3a7e03ca4ba29912963",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					],
+					"query": [
+						{
+							"key": "access-token",
+							"value": "3e62f101ede1506464e5735255d4c571368f0a3be382b3a7e03ca4ba29912963"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "task5",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"key": "3e62f101ede1506464e5735255d4c571368f0a3be382b3a7e03ca4ba29912963",
+						"in": "header",
+						"value": ""
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "?access-token=3e62f101ede1506464e5735255d4c571368f0a3be382b3a7e03ca4ba29912963",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Norbek Ebaev\",\r\n    \"gender\": \"GAY\",\r\n    \"email\": \"AXAXAXAXAXAAX@schiller.test\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users?access-token=3e62f101ede1506464e5735255d4c571368f0a3be382b3a7e03ca4ba29912963",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					],
+					"query": [
+						{
+							"key": "access-token",
+							"value": "3e62f101ede1506464e5735255d4c571368f0a3be382b3a7e03ca4ba29912963"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "task6",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"key": "3e62f101ede1506464e5735255d4c571368f0a3be382b3a7e03ca4ba29912963",
+						"in": "header",
+						"value": ""
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ivanov Kirll\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"Ivanov_Kirill@schiller.test\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users?access-token=3e62f101ede1506464e5735255d4c571368f0a3be382b3a7e03ca4ba29912963",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					],
+					"query": [
+						{
+							"key": "access-token",
+							"value": "3e62f101ede1506464e5735255d4c571368f0a3be382b3a7e03ca4ba29912963"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "task7",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "task8",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://gorest.co.in/public/v2/users/228"
+			},
+			"response": []
+		},
+		{
+			"name": "task9",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ivanov Kirll\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"Ivanov_Kirill228@schiller.test\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/5805463?access-token=3e62f101ede1506464e5735255d4c571368f0a3be382b3a7e03ca4ba29912963",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"5805463"
+					],
+					"query": [
+						{
+							"key": "access-token",
+							"value": "3e62f101ede1506464e5735255d4c571368f0a3be382b3a7e03ca4ba29912963"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "task10_checkInfo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/5805463?access-token=3e62f101ede1506464e5735255d4c571368f0a3be382b3a7e03ca4ba29912963",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"5805463"
+					],
+					"query": [
+						{
+							"key": "access-token",
+							"value": "3e62f101ede1506464e5735255d4c571368f0a3be382b3a7e03ca4ba29912963"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "task11",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/5805463?access-token=3e62f101ede1506464e5735255d4c571368f0a3be382b3a7e03ca4ba29912963",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"5805463"
+					],
+					"query": [
+						{
+							"key": "access-token",
+							"value": "3e62f101ede1506464e5735255d4c571368f0a3be382b3a7e03ca4ba29912963"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": {
+			"key": "3e62f101ede1506464e5735255d4c571368f0a3be382b3a7e03ca4ba29912963"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Autorization",
+			"value": "3e62f101ede1506464e5735255d4c571368f0a3be382b3a7e03ca4ba29912963",
+			"type": "string"
+		}
+	]
+}
