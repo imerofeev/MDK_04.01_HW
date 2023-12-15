@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HW_1</title>
+    <html lang="en">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="table-title">
+<h3>№1 Тест кейсы</h3>
+</div>
+<table class="table-fill">
+<thead>
+<tr>
+<th class="text-left">Действие</th>
+<th class="text-left">Вводимые данные</th>
+<th class="text-left">Ожидаемый результат</th>
+<th class="text-left">Фактический результат</th>
+</tr>
+</thead>
+<tbody class="table-hover">
+<tr>
+<td class="text-left">Проверка корректного закрытия popup на кнопку Lock </td>
+<td class="text-left">--------------------</td>
+<td class="text-left">Закрытие popup на кнопку Lock</td>
+<td class="text-left">Смена конопки на Unlock</td>
+</tr>
+<tr>
+<td class="text-left">Проверка корректной работы Placeholder при вводе пароля</td>
+<td class="text-left">ПриветМир228</td>
+<td class="text-left">Placeholder пропадёт при вводе текста</td>
+<td class="text-left">Placeholder остался на месте</td>
+</tr>
+<tr>
+<td class="text-left">Проверка корректной работы кнопки Next при пустой форме пользователя</td>
+<td class="text-left">--------------------</td>
+<td class="text-left">Какая либо ошибка</td>
+<td class="text-left">Ничего не произошло</td>
+</tr>
+<tr>
+    <td class="text-left">Проверка корректной работы принятия файлов cooki</td>
+    <td class="text-left">--------------------</td>
+    <td class="text-left">Файлы Cooki приняты</td>
+    <td class="text-left">Убрался бокс с принятием</td>
+</tr>
+<tr>
+    <td class="text-left">Проверка корректной работы отказа файлов cooki</td>
+    <td class="text-left">--------------------</td>
+    <td class="text-left">Файлы Cooki отказ</td>
+    <td class="text-left">Ничего не произошло</td>
+</tr>
+<tr>
+    <td class="text-left">Проверка отказа от условий</td>
+    <td class="text-left">--------------------</td>
+    <td class="text-left">закрытие окна</td>
+    <td class="text-left">Невозможно отказаться</td>
+</tr>
+<tr>
+    <td class="text-left">Заполнение  placeholder для ввода email</td>
+    <td class="text-left">АОАОАОАОААО</td>
+    <td class="text-left">Запись email</td>
+    <td class="text-left">Сохранение текста “ Your email” и запись email вместе с ним</td>
+</tr>
+<tr>
+    <td class="text-left">Заполнение  placeholder для ввода Domain</td>
+    <td class="text-left">1234111</td>
+    <td class="text-left">Запись Domain</td>
+    <td class="text-left">Сохранение текста “ Domain” и запись email вместе с ним</td>
+</tr>
+<tr>
+    <td class="text-left">Кнопка Reset сотрёт всё с полей ввода данных</td>
+    <td class="text-left">--------------------</td>
+    <td class="text-left">Очищенные поля данных</td>
+    <td class="text-left">Очищенные поля данных</td>
+</tr>
+<tr>
+    <td class="text-left">Возможность регистрации без прочтения Условий пользования</td>
+    <td class="text-left">--------------------</td>
+    <td class="text-left">Невозможная регистрация</td>
+    <td class="text-left">Сайт не даёт зарегестрироватсья</td>
+</tr>
+</tbody>
+</table>
+
+<div class="table-title">
+    <h3>№2 Баг-репорты</h3>
+    </div>
+    <table class="table-fill">
+    <thead>
+    <tr>
+    <th class="text-left">Id</th>
+    <th class="text-left">Тип проблемы</th>
+    <th class="text-left">Сводка</th>
+    <th class="text-left">Шаги для воспроизведения</th>
+    <th class="text-left">Визуализация пробелмы</th>
+    <th class="text-left">Уровень приоритета</th>
+    </tr>
+    </thead>
+    <tbody class="table-hover">
+    <tr>
+    <td class="text-left">1</td>
+    <td class="text-left">Значительаня ошибка</td>
+    <td class="text-left">Не удаляется placeholder при вводе данных, при регистрации</td>
+    <td class="text-left">Введение любых данных в строки</td>
+    <td class="text-left"><img src="./image/bug1.png"></td>
+    <td class="text-left" style="color: rgb(255, 0, 0);" >Высокий</td>
+    </tr>
+    <tr>
+    <td class="text-left">2</td>
+    <td class="text-left">Значительаня ошибка</td>
+    <td class="text-left">Не удаётся написать слово "help" в окне помощи</td>
+    <td class="text-left">Введение слова "help" и нажатия пробела</td>
+    <td class="text-left"><img src="./image/bug2.png"></td>
+    <td class="text-left" style="color: rgb(255, 0, 0);" >Высокий</td>
+    </tr>
+    <tr>
+    <td class="text-left">3</td>
+    <td class="text-left">Незначительаня ошибка</td>
+    <td class="text-left">Не удаётся выйти на сайт в окне правил и условий</td>
+    <td class="text-left">открытие правил и условий </td>
+    <td class="text-left"><img src="./image/bug3.png"></td>
+    <td class="text-left" style="color: rgb(255, 145, 0);" >Средний</td>
+    </tr>
+    <tr>
+    <td class="text-left">4</td>
+    <td class="text-left">Значительаня ошибка</td>
+    <td class="text-left">Checkbox в графе интересов самозаполняется, что не удобно для пользователя</td>
+    <td class="text-left">Прохождение первой страници регистрации и выбор интересов </td>
+    <td class="text-left"><img src="./image/bug4.png"></td>
+    <td class="text-left" style="color: rgb(255, 0, 0);" >Высокий</td>
+    </tr>
+    <tr>
+    <td class="text-left">5</td>
+    <td class="text-left">Незначительаня ошибка</td>
+    <td class="text-left">Интуитивно не понятный переход на главную страницу регистрации </td>
+    <td class="text-left">Открыть сайт</td>
+    <td class="text-left"><img src="./image/bug5.png"></td>
+    <td class="text-left" style="color: rgb(255, 145, 0);" >Средний</td>
+    </tr>
+</tbody>
+</table>
+<div class="table-title">
+<h3>№3 Моё прохождение сайта :D</h3>
+</div>
+
+<img src="./image/finish.jpg" align="center">
+  </body>
+</head> 
+</body>
+</html>
