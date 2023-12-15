@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link type="text/css" rel="stylesheet/less" href="./assets/style/style.less">
+</head>
+
+<body>
+    <main>
+        <div class="cont">
+            <div class="block">
+                <h1 class="element-animation">Тест-кейсы</h1>
+                <table>
+                    <colgroup>
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
+                    </colgroup>
+                    <tr>
+                        <th><p>id</p></th>
+                        <th><p>Название</p></th>
+                        <th><p>Требования и ограничения</p></th>
+                        <th><p>Шаги</p></th>
+                        <th><p>Ожидаемый результат</p></th>
+                        <th><p>Итог</p></th>
+                    </tr>
+                    <tr>
+                        <td><p>1</p></td>
+                        <td><p>Переход на страницу регистрации</p></td>
+                        <td><p>Открыть сайт на главной странице</p></td>
+                        <td><p>1. Нажать на надпись "HERE"</p></td>
+                        <td>Происходит переход на следующий этап регистрации</td>
+                        <td>Успешно</td>
+                    </tr>
+                    <tr>
+                        <td><p>2</p></td>
+                        <td><p>Регистрация с корректными учетными данными</p></td>
+                        <td><p>Пользователь должен ввести правильные данные</p></td>
+                        <td><p>1. Перейти на страницу регистрации</p> 
+                            <p>2. Ввести корректный email и пароль</p>
+                            <p>3. Убрать галочку с "I do not accept the Terms & Conditions"</p>
+                            <p>4. Нажать на кнопку "Next"</p></td>
+                        <td><p>Происходит переход на следующий этап регистрации</p></td>
+                        <td>Успешно</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><p>Отображение условий использования</p></td>
+                        <td><p>Пользователь должен прочитать условия использования</p></td>
+                        <td><p>1. Перейти на страницу регистрации</p> 
+                            <p>2. Нажать на надпись "Terms & Conditions"</p>
+                        <td><p>Происходит отображение модального окна с условиями соглашения</p></td>
+                        <td>Успешно</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><p>Регистрация с неправильным паролем</p></td>
+                        <td><p>Пароль должен быть неверным</p></td>
+                        <td><p>1. Перейти на страницу регистрации</p> 
+                            <p>2. Ввести корректный email и неверный пароль</p>
+                            <p>3. Нажать на кнопку "Next"</p></td>
+                        <td><p>Отображение сообщения о неверном пароле</p></td>
+                        <td>Отображается уведомление с требованиями для пароля</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><p>Проверка кнопки "Reset"</p></td>
+                        <td><p>В поле должна быть введена информация</p></td>
+                        <td><p>1. Нажать на кнопку "Reset"</p></td>
+                        <td><p>Введенная в поля информация удалена</p></td>
+                        <td>Поля возвращают свои изначальные значения</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><p>Загрузка изображения для профиля</p></td>
+                        <td><p>Пользователь должен пройти первый этап регистрации</p></td>
+                        <td><p>1. Перейти в раздел "Загрузить файл"</p> 
+                            <p>2. Выбрать файл на компьютере</p> 
+                            <p>3. Нажать на кнопку "Загрузить"</p></td>
+                        <td><p>Отображение успешно загруженного файла</p></td>
+                        <td>В avatar_box появаляется загруженное изображение</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><p>Выбор необходимого количества интересов</p></td>
+                        <td><p>Пользователь должен пройти первый этап регистрации</p></td>
+                        <td><p>1. Перейти в раздел "Choose 3 interests"</p> 
+                            <p>2. Поставить галочки у 3 интересов</p>
+                            <p>3. Нажать на кнопку "Next"</p></td>
+                        <td><p>Происходит переход на следующий этап регистрации</p></td>
+                        <td>Успешно</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><p>Выбор неверного количества интересов</p></td>
+                        <td><p>Пользователь должен пройти первый этап регистрации</p></td>
+                        <td><p>1. Перейти в раздел "Choose 3 interests"</p> 
+                            <p>2. Выбрать более или менее 3 интересов</p> 
+                            <p>3. Нажать на кнопку "Next"</p></td>
+                        <td><p>Отображение ошибки о выборе необходимого количества интересов</p></td>
+                        <td>Успешно</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td><p>Проверка кнопки "Download image"</p></td>
+                        <td><p>Пользователь должен пройти первый этап регистрации</p></td>
+                        <td><p>1. Перейти в раздел "Загрузить файл"</p> 
+                            <p>2. Выбрать местоположение для загрузки файла</p> 
+                            <p>3. Нажать на кнопку "Сохранить"</p></td>
+                        <td><p>Изображение загружено на компьютер</p></td>
+                        <td>Успешно</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td><p>Проверка совпадения возраста и даты рождения пользователя</p></td>
+                        <td><p>Пользователь должен ввести все необходимые данные</p></td>
+                        <td><p>1. Перейти в раздел "Age" и указать свой возраст</p>
+                            <p>2. В разделе "Birthdate" выбрать некорректный год рождения</p> 
+                            <p>3. Нажать на кнопку "Next"</p></td>
+                        <td><p>Отображение модального окна с ошибкой</p></td>
+                        <td>Появляется модальное окно с предупреждением о несоответствии возраста и даты рождения</td>
+                    </tr>
+                </table>
+                <div class="gif">
+                    <div><img src="assets/img/funny.gif" alt=""></div>
+                    <div><img src="assets/img/walid.gif" alt=""></div>
+                    <div><img src="assets/img/vibe.gif" alt=""></div>
+                    <div><img src="assets/img/round.gif" alt=""></div>
+                    <div><img src="assets/img/catkiss.gif" alt=""></div>
+                    <div><img src="assets/img/happy.gif" alt=""></div>
+                    <div><img src="assets/img/happy.gif" alt=""></div>
+                    <div><img src="assets/img/happy.gif" alt=""></div>
+                    <div><img src="assets/img/catkiss.gif" alt=""></div>
+                    <div><img src="assets/img/round.gif" alt=""></div>
+                    <div><img src="assets/img/vibe.gif" alt=""></div>
+                    <div><img src="assets/img/walid.gif" alt=""></div>
+                    <div><img src="assets/img/funny.gif" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+    <script type="text/javascript" src="assets/js/less.js"></script>
+    <script type="text/javascript" src="assets/js/jabaTx.js"></script>
+</body>
+
+</html>
