@@ -1,0 +1,310 @@
+{
+	"info": {
+		"_postman_id": "542ee93a-7975-45f6-b4b0-e7f43f664ee4",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31826651"
+	},
+	"item": [
+		{
+			"name": "users_list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://gorest.co.in/public/v2/users"
+			},
+			"response": []
+		},
+		{
+			"name": "user44",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://gorest.co.in/public/v2/users/5803665"
+			},
+			"response": []
+		},
+		{
+			"name": "new_user_unregistration",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {}
+				},
+				"method": "POST",
+				"header": [],
+				"url": "https://gorest.co.in/public/v2/users"
+			},
+			"response": []
+		},
+		{
+			"name": "new_user_with_key",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"key": "1eab7340860127d63a7ae0ce881c436ac703bea344337bf10d9808b875ee2cc4"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"name\":\"Norbek Ebaev\",\r\n        \"email\":\"noooooorbek@schiller.test\",\r\n        \"gender\":\"male\",\r\n        \"status\":\"active\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users?access-token=1eab7340860127d63a7ae0ce881c436ac703bea344337bf10d9808b875ee2cc4",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					],
+					"query": [
+						{
+							"key": "access-token",
+							"value": "1eab7340860127d63a7ae0ce881c436ac703bea344337bf10d9808b875ee2cc4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new_gender",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"key": "1eab7340860127d63a7ae0ce881c436ac703bea344337bf10d9808b875ee2cc4"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"name\":\"Aboba Zhestarew\",\r\n        \"email\":\"lox@schiller.test\",\r\n        \"gender\":\"anti-tank mine\",\r\n        \"status\":\"active\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users?access-token=1eab7340860127d63a7ae0ce881c436ac703bea344337bf10d9808b875ee2cc4",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					],
+					"query": [
+						{
+							"key": "access-token",
+							"value": "1eab7340860127d63a7ae0ce881c436ac703bea344337bf10d9808b875ee2cc4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new_user_with_emale",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"key": "1eab7340860127d63a7ae0ce881c436ac703bea344337bf10d9808b875ee2cc4"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"name\":\"Norbek Ebaev\",\r\n        \"email\":\"noooooorbek@schiller.test\",\r\n        \"gender\":\"male\",\r\n        \"status\":\"active\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users?access-token=1eab7340860127d63a7ae0ce881c436ac703bea344337bf10d9808b875ee2cc4",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					],
+					"query": [
+						{
+							"key": "access-token",
+							"value": "1eab7340860127d63a7ae0ce881c436ac703bea344337bf10d9808b875ee2cc4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "information",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/5805496?access-token=1eab7340860127d63a7ae0ce881c436ac703bea344337bf10d9808b875ee2cc4",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"5805496"
+					],
+					"query": [
+						{
+							"key": "access-token",
+							"value": "1eab7340860127d63a7ae0ce881c436ac703bea344337bf10d9808b875ee2cc4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "No bd",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://gorest.co.in/public/v2/users/2001911"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": {
+						"key": "1eab7340860127d63a7ae0ce881c436ac703bea344337bf10d9808b875ee2cc4"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": 5805496,\r\n        \"name\":\"Norbek Ebaev\",\r\n        \"email\":\"norbek@schiller.test\",\r\n        \"gender\":\"male\",\r\n        \"status\":\"active\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/5805496?access-token=1eab7340860127d63a7ae0ce881c436ac703bea344337bf10d9808b875ee2cc4",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"5805496"
+					],
+					"query": [
+						{
+							"key": "access-token",
+							"value": "1eab7340860127d63a7ae0ce881c436ac703bea344337bf10d9808b875ee2cc4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "information Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/5805496?access-token=1eab7340860127d63a7ae0ce881c436ac703bea344337bf10d9808b875ee2cc4",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"5805496"
+					],
+					"query": [
+						{
+							"key": "access-token",
+							"value": "1eab7340860127d63a7ae0ce881c436ac703bea344337bf10d9808b875ee2cc4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/5805496?access-token=1eab7340860127d63a7ae0ce881c436ac703bea344337bf10d9808b875ee2cc4",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"5805496"
+					],
+					"query": [
+						{
+							"key": "access-token",
+							"value": "1eab7340860127d63a7ae0ce881c436ac703bea344337bf10d9808b875ee2cc4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
